@@ -20,6 +20,7 @@ $tablet : 768px
 html, body
     background-color : #b5d7d7
 
+// Heading Style
 
 .heading
     width : 100%
@@ -32,6 +33,7 @@ html, body
         transform : translateY(-50%)
         z-index : 1001
         cursor : pointer
+        display : none
 
         img
             display : inline-block
@@ -46,19 +48,53 @@ html, body
         .heading
             font-size : 3rem
 
-.wrapper
+
+// Image Category Wrapper Style
+
+.category-wrapper
+    margin-bottom : 2rem
     column-count : 2
     object-fit : contain
 
     @include tablet
         column-count : 3
 
-    .img1
-        margin-top : 20px
 
-        img 
+    .category
+        break-inside : avoid
+
+        figure
             display : block
+            margin-top : 20px
+
+            img 
+                display : inline-block
+                width : 100%
+
+        figcaption
+            margin : 5px
+            font-weight : bold
+            text-align : center
+
+
+// Images in particular Category style
+
+
+.category-image-wrapper
+    margin-bottom : 2rem
+    column-count : 2
+    object-fit : contain
+    display : none
+
+    @include tablet
+        column-count : 3
+
+
+    .category-image
+        img 
+            display : inline-block
             width : 100%
+
 
 .view
     display : none
