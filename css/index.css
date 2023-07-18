@@ -57,6 +57,9 @@ html, body {
   display: inline-block;
   width: 100%;
 }
+.category-wrapper .category:hover {
+  cursor: pointer;
+}
 .category-wrapper .category figcaption {
   margin: 5px;
   font-weight: bold;
@@ -77,6 +80,9 @@ html, body {
 .category-image-wrapper .category-image img {
   display: inline-block;
   width: 100%;
+}
+.category-image-wrapper .category-image:hover {
+  cursor: pointer;
 }
 
 .view {
